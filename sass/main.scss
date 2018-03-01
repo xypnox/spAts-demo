@@ -1,0 +1,37 @@
+$main: rgb(28, 101, 198);
+$white: rgb(238, 238, 238);
+html {
+    background-color: $main;
+    color: $white;
+    text-align: center;
+    body{
+        font-family: "Josefin Sans", sans-serif;
+        .menu {
+            margin: 2% auto;
+            a {
+                font-size: 120%;
+                padding: 1% 4%;
+                display: inline-block;
+                text-decoration: none;
+                // border-bottom: 2px rgba($white, 0) solid;
+                color: rgba($white, 0.5);
+                transition: 0.5s ease-in;
+                border-radius: 10px;
+                &:hover{
+                    color: rgba($white, 0.75);
+                    background-color: darken($main, 2%);
+                    box-shadow: inset 0 0 10px rgba(#000, 0.5);
+                }
+            }
+
+        }
+        h1 {
+            top: 40%;
+            font-size: 1000%;
+            font-weight: 200;
+        }
+        h2, h3 {
+            font-weight: normal;
+        }
+    }
+}
